@@ -61,13 +61,13 @@ function App() {
         <input
           className="input-text"
           onChange={e => setFormData({ ...formData, 'name': e.target.value})}
-          placeholder="Note name"
+          placeholder="Dish name"
           value={formData.name}
         />
         <input
           className="input-text"
           onChange={e => setFormData({ ...formData, 'description': e.target.value})}
-          placeholder="Note description"
+          placeholder="Dish description"
           value={formData.description}
         />
         <input
@@ -75,7 +75,7 @@ function App() {
           type="file"
           onChange={onChange}
         />
-        <button className="create-button" onClick={createNote}>Create Note</button>
+        <button className="create-button" onClick={createNote}>Create food porn</button>
       </div>
       <div style={{marginBottom: 30}}>
         {
