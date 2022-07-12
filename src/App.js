@@ -55,7 +55,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>My Notes App</h1>
+      <h1>Home Eats</h1>
+      <h2>Upload your favorite homemade dishes!</h2>
       <div className="input-container">
         <input
           className="input-text"
