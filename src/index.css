@@ -12,6 +12,15 @@ code {
     monospace;
 }
 
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-bottom: 30px; */
+  background-color: #FF5B00;
+  padding-bottom: 30px;
+}
+
 .input-container {
   display: flex;
   flex-direction: column;
@@ -20,18 +29,52 @@ code {
   gap: 10px;
 }
 
-button {
-  border-radius: 10px;
-  border-color: red;
-  background-color: red;
+.btn-create {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
 }
 
-.create-button {
-  border-color: green;
-  background-color: green;
+.btn-delete {
+  display: inline-block;
+  background: #990000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
 }
 
 .input-text {
-  border-radius: 10px;
+  border-radius: 5px;
   padding-left: 10px;
+}
+
+.bottom-container {
+  background-color: #FFEE63;
+  padding-bottom: 20px;
+}
+
+.dish-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20%;
+  align-items: center;
+  gap: 7px;
+}
+
+.img-food {
+  border-radius: 10px;
 }

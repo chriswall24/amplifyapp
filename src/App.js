@@ -55,38 +55,44 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Home Eats</h1>
-      <h2>Upload your favorite homemade dishes!</h2>
-      <div className="input-container">
-        <input
-          className="input-text"
-          onChange={e => setFormData({ ...formData, 'name': e.target.value})}
-          placeholder="Dish name"
-          value={formData.name}
-        />
-        <input
-          className="input-text"
-          onChange={e => setFormData({ ...formData, 'description': e.target.value})}
-          placeholder="Dish description"
-          value={formData.description}
-        />
-        <input
-          className='input-text'
-          type="file"
-          onChange={onChange}
-        />
-        <button className="create-button" onClick={createNote}>Create food porn</button>
+      <div className="top-container">
+        <div>
+          <h1>Home Eats</h1>
+          <h2>Upload your favorite homemade dishes!</h2>
+        </div>
+        <div className="input-container">
+          <input
+            className="input-text"
+            onChange={e => setFormData({ ...formData, 'name': e.target.value})}
+            placeholder="Dish name"
+            value={formData.name}
+          />
+          <input
+            className="input-text"
+            onChange={e => setFormData({ ...formData, 'description': e.target.value})}
+            placeholder="Dish description"
+            value={formData.description}
+          />
+          <input
+            className='input-text'
+            type="file"
+            onChange={onChange}
+          />
+          <button className="btn-create" onClick={createNote}>Create food porn</button>
+        </div>
       </div>
-      <div style={{marginBottom: 30}}>
+      <div className="bottom-container">
         {
           notes.map(note => (
-            <div key={note.id || note.name}>
-              <h2>{note.name}</h2>
-              <p>{note.description}</p>
-              <button onClick={() => deleteNote(note)}>Delete note</button>
+            <div key={note.id || note.name} className='dish-card'>
+              <div className="card-text">
+                <h2>{note.name}</h2>
+                <p>{note.description}</p>
+              </div>
               {
-                note.image && <img src={note.image} style={{width: 400}} alt='' />
+                note.image && <img src={note.image} style={{width: 400}} alt='' className='img-food' />
               }
+              <button className="btn-delete" onClick={() => deleteNote(note)}>Delete dish</button>
             </div>
           ))
         }
