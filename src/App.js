@@ -74,7 +74,6 @@ function App() {
             value={formData.description}
           />
           <input
-            // className='input-text'
             type="file"
             onChange={onChange}
           />
