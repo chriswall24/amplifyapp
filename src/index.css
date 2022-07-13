@@ -68,6 +68,22 @@ code {
   padding-bottom: 20px;
 }
 
+.dish-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card-text {
+  padding-bottom: 10px;
+}
+
+.dish-name {
+  width: 300px;
+}
+
 .dish-card {
   display: flex;
   flex-direction: column;
@@ -77,7 +93,10 @@ code {
 }
 
 .img-food {
+  object-fit: cover;
   border-radius: 10px;
+  height: 500px;
+  width: 400px;
 }
 
 /* fix this TODO */

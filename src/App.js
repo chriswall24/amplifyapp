@@ -4,6 +4,7 @@ import { API, Storage } from 'aws-amplify';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { listNotes } from './graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
+import DishCard from './DishCard';
 
 const initialFormState = { name: '', description: '' }
 
@@ -81,20 +82,16 @@ function App() {
         </div>
       </div>
       <div className="bottom-container">
-        {
-          notes.map(note => (
-            <div key={note.id || note.name} className='dish-card'>
-              <div className="card-text">
-                <h2>{note.name}</h2>
-                <p>{note.description}</p>
+        <div className="dish-card-container">
+          {
+            notes.map(note => (
+              <div>
+                <DishCard note={note}/>
+                <button className="btn-delete" onClick={() => deleteNote(note)}>Delete dish</button>
               </div>
-              {
-                note.image && <img src={note.image} style={{width: 400}} alt='' className='img-food' />
-              }
-              <button className="btn-delete" onClick={() => deleteNote(note)}>Delete dish</button>
-            </div>
-          ))
-        }
+            ))
+          }
+        </div>
       </div>
       <AmplifySignOut />
     </div>
