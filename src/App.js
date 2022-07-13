@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="App">
       <div className="top-container">
-        <div>
+        <div className="title-text">
           <h1>Home Eats</h1>
           <h2>Upload your favorite homemade dishes!</h2>
         </div>
