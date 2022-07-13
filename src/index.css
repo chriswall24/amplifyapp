@@ -81,7 +81,7 @@ code {
 }
 
 .dish-name {
-  width: 300px;
+  width: 310px;
 }
 
 .dish-card {
@@ -112,4 +112,8 @@ code {
   text-decoration: none;
   font-size: 15px;
   font-family: inherit;
+}
+
+#file-upload-button {
+  border-radius: 30px !important;
 }

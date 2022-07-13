@@ -15,7 +15,7 @@ const DishCard = ({ note }) => {
   return (
     <div key={note.id || note.name} className='dish-card'>
       <div className="card-text">
-        <h2 className='dish-name'>{note.name}</h2>
+        <h3 className='dish-name'>{note.name}</h3>
         <p>{note.description}</p>
       </div>
       {

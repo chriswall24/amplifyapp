@@ -65,12 +65,14 @@ function App() {
           <input
             className="input-text"
             onChange={e => setFormData({ ...formData, 'name': e.target.value})}
+            maxLength={30}
             placeholder="Dish name"
             value={formData.name}
           />
           <input
             className="input-text"
             onChange={e => setFormData({ ...formData, 'description': e.target.value})}
+            maxLength={40}
             placeholder="Dish description"
             value={formData.description}
           />
