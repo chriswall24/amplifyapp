@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="App">
       <div className="top-container">
-        <div>
+        <div className="title-text">
           <h1>Home Eats</h1>
           <h2>Upload your favorite homemade dishes!</h2>
         </div>
@@ -65,12 +65,14 @@ function App() {
           <input
             className="input-text"
             onChange={e => setFormData({ ...formData, 'name': e.target.value})}
+            maxLength={30}
             placeholder="Dish name"
             value={formData.name}
           />
           <input
             className="input-text"
             onChange={e => setFormData({ ...formData, 'description': e.target.value})}
+            maxLength={40}
             placeholder="Dish description"
             value={formData.description}
           />
