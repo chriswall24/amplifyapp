@@ -69,13 +69,12 @@ function App() {
             placeholder="Dish name"
             value={formData.name}
           />
-          <input
+          <textarea
             className="input-text-description"
             onChange={e => setFormData({ ...formData, 'description': e.target.value})}
             maxLength={160}
             placeholder="Dish description"
             value={formData.description}
-            type="textarea"
           />
           <input
             type="file"
