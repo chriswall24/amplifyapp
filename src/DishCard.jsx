@@ -16,7 +16,7 @@ const DishCard = ({ note }) => {
     <div key={note.id || note.name} className='dish-card'>
       <div className="card-text">
         <h3 className='dish-name'>{note.name}</h3>
-        <p>{note.description}</p>
+        <p className='dish-description'>{note.description}</p>
       </div>
       {
         note.image && <img src={note.image} alt='' className='img-food' />

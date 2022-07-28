@@ -76,6 +76,10 @@ code {
   border: 2px solid #990000;
 }
 
+.input-text-description::placeholder {
+  font-family: 'Montserrat'
+}
+
 .bottom-container {
   background-color: #FFEE63;
   padding: 20px 0px;
@@ -98,12 +102,20 @@ code {
 }
 
 .card-text {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 10px;
+  align-items: center;
   font-family: 'Montserrat', sans-serif;
 }
 
 .dish-name {
   width: 310px;
+}
+
+.dish-description {
+  max-width: fit-content;
+  text-align: center;
 }
 
 .dish-card {
