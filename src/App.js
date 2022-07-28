@@ -65,16 +65,17 @@ function App() {
           <input
             className="input-text"
             onChange={e => setFormData({ ...formData, 'name': e.target.value})}
-            maxLength={30}
+            maxLength={60}
             placeholder="Dish name"
             value={formData.name}
           />
           <input
-            className="input-text"
+            className="input-text-description"
             onChange={e => setFormData({ ...formData, 'description': e.target.value})}
-            maxLength={40}
+            maxLength={160}
             placeholder="Dish description"
             value={formData.description}
+            type="textarea"
           />
           <input
             type="file"
