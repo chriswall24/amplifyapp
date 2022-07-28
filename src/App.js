@@ -87,7 +87,7 @@ function App() {
         <div className="dish-card-container">
           {
             notes.map(note => (
-              <div>
+              <div className='card-btn-container'>
                 <DishCard note={note}/>
                 <button className="btn-delete" onClick={() => deleteNote(note)}>Delete dish</button>
               </div>
