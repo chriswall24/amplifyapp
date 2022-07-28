@@ -70,6 +70,12 @@ code {
   border: 2px solid #990000;
 }
 
+.input-text-description {
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 2px solid #990000;
+}
+
 .bottom-container {
   background-color: #FFEE63;
   padding: 20px 0px;
