@@ -59,7 +59,7 @@ function App() {
       <div className="top-container">
         <div className="title-text">
           <h1>Home Eats</h1>
-          <h2>Upload your favorite homemade dishes!</h2>
+          <h2>Upload your favorite dishes!</h2>
         </div>
         <div className="input-container">
           <input
