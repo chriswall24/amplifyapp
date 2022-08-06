@@ -97,10 +97,11 @@ code {
   border-radius: 5px;
   padding-left: 10px;
   border: 2px solid #990000;
+  font-family: 'Montserrat';
 }
 
 .input-text-description::placeholder {
-  font-family: 'Montserrat'
+  font-family: 'Montserrat';
 }
 
 .bottom-container {
