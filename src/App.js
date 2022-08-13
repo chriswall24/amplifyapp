@@ -55,6 +55,10 @@ function App() {
     await API.graphql({ query: deleteNoteMutation, variables: { input: { id } }});
   }
 
+  function sortByCreatedAt(a, b) {
+    return b.createdAt - a.createdAt
+  }
+
   return (
     <div className="App">
       <div className="top-container">
@@ -92,7 +96,7 @@ function App() {
                 <DishCard note={note}/>
                 <button className="btn-delete" onClick={() => deleteNote(note)}>Delete dish</button>
               </div>
-            ))
+            )).sort(sortByCreatedAt)
           }
         </div>
       </div>
