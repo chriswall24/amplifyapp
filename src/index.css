@@ -57,6 +57,9 @@ code {
   margin: 0 20% !important;
   text-align: center;
   gap: 10px;
+  background-color: #990000;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .btn-create {
