@@ -1,16 +1,6 @@
 import React from 'react'
-// import { deleteNote as deleteNoteMutation } from './graphql/mutations'
-// import { API } from 'aws-amplify';
-
 
 const DishCard = ({ note }) => {
-  // const [notes, setNotes] = useState([]);
-
-  // async function deleteNote({ id }) {
-  //   const newNotesArray = notes.filter(note => note.id !== id);
-  //   setNotes(newNotesArray);
-  //   await API.graphql({ query: deleteNoteMutation, variables: { input: { id } }});
-  // }
 
   return (
     <div key={note.id || note.name} className='dish-card'>
