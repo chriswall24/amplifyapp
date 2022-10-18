@@ -5,7 +5,7 @@ import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { listNotes } from './graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
 import DishCard from './DishCard';
-import { FacebookProvider, Comments } from 'react-facebook';
+// import { FacebookProvider, Comments } from 'react-facebook';
 
 const initialFormState = { name: '', description: '' }
 
@@ -100,9 +100,9 @@ function App() {
           }
         </div>
       </div>
-      <FacebookProvider appId="1395715404237243">
+      {/* <FacebookProvider appId="1395715404237243">
         <Comments href="http://www.facebook.com" />
-      </FacebookProvider>
+      </FacebookProvider> */}
       <AmplifySignOut />
     </div>
   );
